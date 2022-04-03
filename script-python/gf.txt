@@ -1,0 +1,7 @@
+Linguagem da programação
+
+adição: + ou ,
+
+receber: =
+
+input: interagir

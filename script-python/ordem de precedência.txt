@@ -1,0 +1,5 @@
+Ordem de precedência 
+1° () - parenteses 
+2° ** exponenciação
+3° *, /, //, e % multiplicação, divisão, divisão completa e resto da divisão
+4° + ou - adição ou subitração

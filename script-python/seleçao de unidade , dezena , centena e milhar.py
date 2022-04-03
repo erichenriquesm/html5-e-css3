@@ -1,0 +1,6 @@
+n1 = input(str('QUAL É O SEU NOME COMPLETO?')).strip()
+print('ANALISANDO SEU NOME....')
+print('Seu nome em maiúsculo é {}'.format(n1.upper()))
+print('Seu nome em minúsculo é {}'.format(n1.lower()))
+print('Seu nome ao todo tem {} letras'.format(len(n1) - n1.count(' ')))
+print('Seu segundo nome tem  {} letras'.format(n1.find(' ')))
