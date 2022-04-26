@@ -33,8 +33,8 @@ header{
 header > h1{
     font-family: 'default', sans-serif;
     font-weight: 300;
-    font-size: 2.3em;
-    text-align: center;
+    font-size: 2em;
+    text-align: left;
 }
 
 main{
@@ -67,11 +67,11 @@ section{
 #ins{
     position: absolute;
     top: 6px;
-    left: 240px ;
+    left: 230px ;
 }
 
 #per{
     position: absolute;
     top: 12px;
-    left: 280px;
+    left: 270px;
 }
