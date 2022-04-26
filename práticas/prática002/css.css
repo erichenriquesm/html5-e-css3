@@ -13,10 +13,11 @@ body{
     font-family: 'default', sans-serif;
     background: lightgray url('imagens/800px-Biblioteca_de_la_avaroa.jpg') no-repeat fixed;
     background-size: cover;
+    width: 100vw;
 }
 
 header{
-    width: 100%;
+    width: 98.5vw;
     padding: 10px;
     min-height: 50px;
     background-color: white;
@@ -29,29 +30,8 @@ header > h1{
     text-align: center;
 }
 
-nav{
-    margin-top: 10px;
-}
-
-a{
-    text-decoration: none;
-}
-nav > a{
-    color: black;
-    font-family: 'default', sans-serif;
-    padding: 10px;
-    font-size: 1em;
-    font-weight: 300;
-    border-radius: 5px;
-    transition-duration: .5s;
-}
-
-nav > a:hover{
-    background-color: rgb(211, 210, 210);
-}
-
 main{
-    margin: auto;
+    margin: 10px auto;
     /*background-color: gray;*/
     min-width: 450px;
     max-width: 1000px;
