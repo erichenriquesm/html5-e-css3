@@ -1,23 +1,89 @@
 *{
     margin: 0px;
 }
+
+@font-face {
+    font-family: 'default';
+    src: url('fontes/Montserrat-Italic-VariableFont_wght.ttf') format('truetype');
+}
+
 body{
     font: normal 1.3em sans-serif;
-    background-color: lightgray;
+    color: black;
+    font-family: 'default', sans-serif;
+    background: lightgray url('imagens/800px-Biblioteca_de_la_avaroa.jpg') no-repeat fixed;
+    background-size: cover;
 }
+
 header{
     padding: 10px;
-    width: 100vw;
-    min-height: 100px;
-    background-color: rgb(108, 4, 206);
+    min-height: 50px;
+    background-color: white;
 }
+
 header > h1{
-    font: bold 3em sans-serif;
-    color: white;
-    position: absolute;
+    font-family: 'default', sans-serif;
+    font-weight: 300;
     top: 30px;
+    text-align: center;
 }
+
 nav{
+    margin-top: 10px;
+}
+
+a{
+    text-decoration: none;
+}
+nav > a{
+    color: black;
+    font-family: 'default', sans-serif;
     padding: 10px;
-    background-color: blue;
+    font-size: 1em;
+    font-weight: 300;
+    border-radius: 5px;
+    transition-duration: .5s;
+}
+
+nav > a:hover{
+    background-color: rgb(211, 210, 210);
+}
+
+main{
+    margin: auto;
+    /*background-color: gray;*/
+    min-width: 300px;
+    max-width: 1000px;
+    text-align: left;
+    padding: 10px;
+    background-color: white;
+}
+
+main > h1{
+    margin-bottom: 10px;
+}
+
+section{
+    margin-bottom: 20px;
+}
+
+.container{
+    position: relative;
+}
+#ctt{
+    position: absolute;
+    top: 12px;
+    left: 60px;
+}
+
+#ins{
+    position: absolute;
+    top: 6px;
+    left: 250px ;
+}
+
+#per{
+    position: absolute;
+    top: 12px;
+    left: 290px;
 }
