@@ -19,6 +19,7 @@ header{
     padding: 10px;
     min-height: 50px;
     background-color: white;
+    width: 100%;
 }
 
 header > h1{
@@ -29,7 +30,7 @@ header > h1{
 
 main{
     margin: 10px auto;
-    min-width: 350px;
+    min-width: 360px;
     max-width: 1000px;
     text-align: left;
     padding: 10px;
