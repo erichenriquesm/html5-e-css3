@@ -2,6 +2,14 @@
     margin: 0px;
 }
 
+body, html{
+    overflow: hidden !important;
+}
+@media (max-width: 786px){
+    body, html{
+        overflow-x: hidden !important;
+    }
+}
 @font-face {
     font-family: 'default';
     src: url('fontes/Montserrat-Italic-VariableFont_wght.ttf') format('truetype');
@@ -11,7 +19,7 @@ body{
     font: normal 1.3em sans-serif;
     color: black;
     font-family: 'default', sans-serif;
-    background: lightgray url('imagens/800px-Biblioteca_de_la_avaroa.jpg') no-repeat fixed;
+    background: lightgray url('imagens/library-g967257a46_1920.jpg') no-repeat fixed;
     background-size: cover;
 }
 
@@ -25,11 +33,13 @@ header{
 header > h1{
     font-family: 'default', sans-serif;
     font-weight: 300;
+    font-size: 2.3em;
     text-align: center;
 }
 
 main{
     margin: 10px auto;
+    border-radius: 5px;
     min-width: 360px;
     max-width: 1000px;
     text-align: left;
@@ -51,17 +61,17 @@ section{
 #ctt{
     position: absolute;
     top: 12px;
-    left: 60px;
+    left: 50px;
 }
 
 #ins{
     position: absolute;
     top: 6px;
-    left: 250px ;
+    left: 240px ;
 }
 
 #per{
     position: absolute;
     top: 12px;
-    left: 290px;
+    left: 280px;
 }
