@@ -53,7 +53,7 @@ nav > a:hover{
 main{
     margin: auto;
     /*background-color: gray;*/
-    min-width: 300px;
+    min-width: 450px;
     max-width: 1000px;
     text-align: left;
     padding: 10px;
