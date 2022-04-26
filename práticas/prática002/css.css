@@ -13,11 +13,10 @@ body{
     font-family: 'default', sans-serif;
     background: lightgray url('imagens/800px-Biblioteca_de_la_avaroa.jpg') no-repeat fixed;
     background-size: cover;
-    width: 100vw;
 }
 
 header{
-    width: 98.5vw;
+    width: 100%;
     padding: 10px;
     min-height: 50px;
     background-color: white;
