@@ -13,6 +13,7 @@ body{
     font-family: 'default', sans-serif;
     background: lightgray url('imagens/800px-Biblioteca_de_la_avaroa.jpg') no-repeat fixed;
     background-size: cover;
+    width: 100vw;
 }
 
 header{
@@ -52,7 +53,7 @@ nav > a:hover{
 main{
     margin: auto;
     /*background-color: gray;*/
-    min-width: 250px;
+    min-width: 350px;
     max-width: 1000px;
     text-align: left;
     padding: 10px;
