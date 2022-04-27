@@ -53,8 +53,10 @@ main > h1{
 
 section{
     margin-bottom: 20px;
+    padding: 10px;
+    width: 450px;
+    background-color: lightgray;
 }
-
 .container{
     position: relative;
 }
