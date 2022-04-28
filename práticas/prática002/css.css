@@ -52,12 +52,17 @@ main > h1{
 h2{
     font-size: 1em;
 }
-
+a{
+    color: black;
+}
 section{
     margin-bottom: 20px;
     padding: 10px;
     width: 65%;
     background-color: lightgray;
+}
+section:hover{
+    background-color: rgba(0, 0, 255, 0.733);
 }
 .container{
     position: relative;
