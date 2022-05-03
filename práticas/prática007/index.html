@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cabeçalho</title>
+    <style>
+        *{
+            margin: 0px;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header{
+            display: flex;
+            flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        background-color: black;
+        color: white;
+        padding: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        }
+        header a{
+            text-decoration: none;
+            color: white;
+            display: block;
+            margin-left: 20px;
+            font-size: 1.5em;
+        }
+        a:hover{
+            color: darkblue;
+        }
+        ul{
+            display: flex;
+            list-style: none;
+        }
+        .thumb{
+            height: 200px;
+            display: flex;
+            align-items: flex-end;
+            background: lightgray url('imagens/3.jpg')
+            center center;
+            background-size: cover;
+        }
+        .thumb > h1{
+            color: white;
+            font-size: 2.5em;
+            padding: 10px;
+        }
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            min-width: 300px;
+            max-width: 1300px;
+            margin: auto;
+            justify-content: center;
+
+        }
+        .container > div{
+            width: 400px;
+            height: 200px;
+            margin: 10px;
+        }
+        #b1{
+            background: lightgray url('imagens/jake-blucker-c6miNI_WdZ4-unsplash.jpg') center center;
+            background-size: cover;
+            display: flex;
+            align-items: flex-end;
+        }
+        #b2{
+            background: lightgray url('imagens/marco-xu-zcvWUNrmPBQ-unsplash.jpg') center center;
+            background-size: cover;
+            display: flex;
+            align-items: flex-end;
+        }
+        .sub{
+            color:white;
+            padding: 10px;
+            background-color: black;
+            width: 100%;
+            
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Logo</h1>
+        <ul>
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Ajuda</a></li>
+            <li><a href="#">YouTube</a></li>
+        </ul>
+    </header>
+    <div class="thumb">
+        <h1>Usando FlexBox</h1>
+    </div>
+    <section class="container">
+        <div id="b1">
+            <p class="sub">WallPaper #1</p>
+        </div>
+        <div id="b1">
+            <p class="sub">WallPaper #2</p>
+        </div>
+        <div id="b2">
+            <p class="sub">WallPaper #3</p>
+        </div>
+    </section>
+</body>
+</html>
