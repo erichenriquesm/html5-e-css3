@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+        
+        }
+        header{
+            background-color: black;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center; padding: 20px;
+        }
+        header #ti{
+            color: white;
+            font-size: 1em;
+        }
+        ul{
+            list-style: none;
+            display: flex;
+        }
+
+        a{
+            margin-left: 15px;
+            text-decoration: none;
+            font-size: 1.4em;
+            color: white;
+            transition-duration: .5s;
+        }
+        a:hover{
+            color: darkblue;
+        }
+        .thumb{
+            height: 250px;
+            background: lightgray url('imagens/2022-03-05.jpg')
+            top left;
+            background-size: cover;
+        }
+        main{
+            *background-color: lightgray;
+            min-width: 300px;
+            max-width: 1000px;
+            height: 150px;
+            margin: 10px auto;
+            padding: 10px;
+        }
+        .criadores{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .criadores > div{
+            margin: 10px;
+            background-color: lightgray;
+            margin: 10px;
+            width: 400px;
+            height: 200px;
+            display: flex;
+            align-items: flex-end;
+        }
+        .sub{
+            width: 100vw;
+            padding-left: 5px;
+            margin: 0px;
+            color: black;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.37);
+        }
+        #eric{
+            background: url('imagens/IMG_20220315_094305076.jpg') center center;
+            background-size: cover;
+        }
+        h1{
+        font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1><a id="ti" href="#">C. Castro Alves</a></h1>
+        <ul>
+            <li><a href="#">Suporte</a></li>
+            <li><a href="#">Redes Sociais</a></li>
+        </ul>
+    </header>
+
+    <section class="thumb">
+    </section>
+
+    <main>
+        <h1>Criadores do site não oficial do Colégio</h1>
+
+        <section class="criadores">
+            <div>
+                <h2 class="sub">Yasmin Parangaba - Escrita</h2>
+            </div>
+
+             <div id="eric">
+                <h2 class="sub">Eric Henrique - Web Dev.</h2>
+             </div>
+
+        </section>
+    </main>
+
+</body>
+</html>
