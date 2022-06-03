@@ -94,3 +94,9 @@ section > p{
      color: white;
      padding: 10px;
  }
+
+ @media (max-width: 400px){
+     section{
+         font-size: 1em;
+     }
+ }
