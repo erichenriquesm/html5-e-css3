@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alocação de vídeo</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body, html{
+            font-family: Arial, Helvetica, sans-serif;
+            font-variant: small-caps;
+        }
+
+        header{
+            background-color: black;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav{
+            background: lightgray url('vídeos/pexels-eberhard-grossgasteiger-844297.jpg') center center fixed;
+            background-size: cover;
+            padding: 10px;
+            height: 250px;
+            margin-bottom: 10px;
+            box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.493);
+            display: flex;
+        }
+
+        main{
+            min-width: 400px;   
+            max-width: 1000px;
+            margin: auto;
+            padding: 10px;
+
+        }
+
+        .perfil{
+            height: 60px;
+            font-variant: normal;
+            display: flex;
+            align-items: center;
+            margin-left: 10px;
+        }
+        .perfil > img{
+            width: 60px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+        nav > h1{
+            display: flex;
+            align-items: flex-end;
+            margin-left: -270px;
+            font-size: 2em;
+            
+            
+        }
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            
+        }
+        .bloco{
+            width: 200px;
+            height: 200px;
+            background-color: lightgray;
+            border-radius: 10px;
+            margin: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Teste</h1>
+    </header>
+
+    <nav>
+        <section class="perfil">
+            <img src="vídeos/102707728.jpg" alt="perfil">
+            <p>Atualizado em 02/06/2022 <br>Por Eric</p>
+        </section>
+        <h1>TESTANDO IMAGENS</h1>
+    </nav>
+
+    <main>
+        <div class="container">
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+        </div>
+    </main>
+
+</body>
+</html>
