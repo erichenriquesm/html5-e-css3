@@ -4,99 +4,124 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alocação de vídeo</title>
+    <title>Re-zero</title>
     <style>
         *{
             margin: 0px;
             padding: 0px;
         }
-        body, html{
+
+        body{
             font-family: Arial, Helvetica, sans-serif;
-            font-variant: small-caps;
         }
 
         header{
-            background-color: black;
+            padding: 30px;
             color: white;
-            padding: 20px;
-            text-align: center;
-        }
-
-        nav{
-            background: lightgray url('vídeos/pexels-eberhard-grossgasteiger-844297.jpg') center center fixed;
-            background-size: cover;
-            padding: 10px;
-            height: 250px;
-            margin-bottom: 10px;
-            box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.493);
-            display: flex;
-        }
-
-        main{
-            min-width: 400px;   
-            max-width: 1000px;
-            margin: auto;
-            padding: 10px;
-
+            background-color: black;
+            font-variant: small-caps;
         }
 
         .perfil{
-            height: 60px;
-            font-variant: normal;
-            display: flex;
-            align-items: center;
-            margin-left: 10px;
-        }
-        .perfil > img{
-            width: 60px;
-            border-radius: 50%;
-            margin-right: 15px;
-        }
-        nav > h1{
-            display: flex;
-            align-items: flex-end;
-            margin-left: -270px;
-            font-size: 2em;
-            
-            
-        }
-        .container{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            
-        }
-        .bloco{
-            width: 200px;
-            height: 200px;
-            background-color: lightgray;
-            border-radius: 10px;
-            margin: 10px;
+            background-color: rgba(211, 211, 211, 0.616);
+            height: 80px;
+            padding: 4px;
+            position: relative;
+            margin: 5px 0px;
         }
 
+        .perfil img{
+            width: 80px;
+            border-radius: 50%;
+            margin-left: 15px;
+            position: absolute;
+        }
+
+        .perfil p{
+            position: absolute;
+            top: 25px;
+            left: 120px;
+        }
+
+        main{
+            margin: auto;
+            min-width: 300px;
+            max-width: 900px;
+            padding: 5px;
+        }
+
+        .img{
+            background-color: lightgray;
+            max-width: 600px;
+            height: 280px;
+            margin:  10px auto;
+            background: url('vídeos/pexels-eberhard-grossgasteiger-844297.jpg')
+            center center no-repeat;
+            background-size: cover;
+        }
+
+        h1{
+            padding: 8px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 400;
+        }
+
+        p{
+            padding: 8px;
+            font-weight: 400;
+            line-height: 1.4em;
+            text-indent: 8px;
+            text-align: justify;
+        }
+
+        footer{
+            background-color: black;
+            padding: 10px;
+            color: white;
+        }
+
+        a{
+            text-decoration: none;
+            font-variant: small-caps;
+            color: white;
+        }
+
+        footer > a, .autoria{
+            text-align: center;
+        }
+        @media (max-width: 628px){
+            h1{
+                font-size: 1.5em;
+            }
+        }
+
+        @media (min-width: 800px){
+            h1{
+                font-size: 2.5em;
+            }
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Teste</h1>
+        <h1>Cabeçalho</h1>
     </header>
 
-    <nav>
-        <section class="perfil">
-            <img src="vídeos/102707728.jpg" alt="perfil">
-            <p>Atualizado em 02/06/2022 <br>Por Eric</p>
-        </section>
-        <h1>TESTANDO IMAGENS</h1>
-    </nav>
+    <section class="perfil">
+        <img src="vídeos/102707728.jpg" alt="perfi">
+        <p>Feito por: Eric <br>
+        10/06/2022</p>
+    </section>
 
     <main>
-        <div class="container">
-            <div class="bloco"></div>
-            <div class="bloco"></div>
-            <div class="bloco"></div>
-            <div class="bloco"></div>
-        </div>
+        <h1>Como as imagens são postas no HTML5 </h1>
+        <div class="img"></div>
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque similique quidem repellendus, eaque iusto qui ipsum? Dignissimos nam reprehenderit et, rem expedita voluptate ab aliquid. Saepe fugit dolor architecto aliquam?</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates vel non repudiandae fuga odit suscipit quae similique, quaerat sit quis sequi optio exercitationem? Eius recusandae voluptates minus magni tenetur reiciendis. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti fugiat magni veritatis ducimus consequuntur repellendus ipsa aliquam! Sapiente vel impedit consequuntur sunt quibusdam totam cupiditate, magni incidunt commodi, accusamus quia.</p>
     </main>
 
+    <footer><p class="autoria">Por <a href="">EricHenriqueSM</a></p></footer>        
 </body>
 </html>
