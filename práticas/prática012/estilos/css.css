@@ -96,6 +96,9 @@ footer > a, .autoria{
     h1{
         font-size: 1.5em;
     }
+    .img, #ft2{
+        height: 240px;
+    }
 }
 
 @media (min-width: 800px){
