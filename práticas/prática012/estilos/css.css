@@ -17,22 +17,19 @@ header{
 .perfil{
     height: 80px;
     padding: 4px;
-    position: relative;
+    display: flex;
     margin: 5px 0px;
+    align-items: center;
 }
 
 .perfil img{
     width: 80px;
     border-radius: 50%;
     margin-left: 15px;
-    position: absolute;
 }
 
 .perfil p{
-    position: absolute;
-    top: 25px;
-    left: 100px;
-    text-align: justify;
+    margin-left: 5px;
 }
 
 main{
@@ -48,8 +45,9 @@ main{
     height: 280px;
     margin:  20px auto;
     background: url('../vídeos/pexels-eberhard-grossgasteiger-844297.jpg')
-    center center no-repeat;
+    center center no-repeat fixed;
     background-size: cover;
+    box-shadow: inset 16px 16px 16px 0px rgba(0, 0, 0, 0.363);
 }
 
 #ft2{
@@ -58,7 +56,7 @@ main{
     height: 280px;
     margin:  20px auto;
     background: url('../vídeos/redação.png')
-    center center no-repeat;
+    center center no-repeat fixed;
     background-size: cover;
 }
 
