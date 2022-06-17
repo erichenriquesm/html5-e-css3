@@ -6,66 +6,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas</title>
     <style>
-        table{
-            width: 400px;
-            border-collapse: collapse;
-            margin: 20px auto;
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body{
             font-family: Arial, Helvetica, sans-serif;
         }
+
+        header{
+            background-color: black;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        main{
+            height: 600px;
+            background-color: lightgray;
+            border: 1px solid rgba(0, 0, 0, 0.459);
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        table{
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px;
+            margin: auto;
+        }
+
         td{
             border: 1px solid black;
-            padding-left: 8px;
+            background-color: white;
+            text-align: center;
         }
-        .black{
-            background-color: rgba(0, 0, 0, 0.521);
+
+        div{
+            width: 400px;
+            height: 400px;
+            background-color: white;
         }
-        .esp{
-            background-color: aqua;
+        section{
+            max-width: 900px;
+            height: 600px;
+            margin: 10px;
         }
     </style>
 </head>
 <body>
+    <header>
+        <h1>Tabelas</h1>
+    </header>
 
-    <h1>Minha primeira tabela</h1>
+    <main>
+        <section>
+            <table>
+                <tr>
+                    <td>
+                        Nomes
+                    </td>
+    
+                    <td>
+                        Idade
+                    </td>
+    
+                    <td>
+                        Data de nascimento
+                    </td>
+                </tr>
+    
+                <tr>
+                    <td>Eric</td>
+                    <td>16</td>
+                    <td>26/09/2005</td>
+                </tr>
+    
+                <tr>
+                    <td>Miguel</td>
+                    <td>8</td>
+                    <td>11/18/2013</td>
+                </tr>
+            </table>
+        </section>
+        <div>
 
-    <table>
-        <tr class="black"> <!--Primeira linha-->
-            <td>A1</td>
-            <td class="esp">B1</td>
-            <td>C1</td>
-        </tr>
-
-        <tr>
-            <td>A2</td>
-            <td>B2</td>
-            <td>C2</td>
-        </tr>
-
-        <tr>
-            <td>A3</td>
-            <td>B3</td>
-            <td>C3</td>
-        </tr>
-
-        <tr>
-            <td>A4</td>
-            <td>B4</td>
-            <td>C4</td>
-        </tr>
-    </table>
-
-    <table>
-        <tr>
-            <td>Nome</td>
-            <td>Idade</td>
-            <td>Preço</td>
-        </tr>
-
-        <tr>
-            <td>Maria</td>
-            <td>14</td>
-            <td>22 US</td>
-        </tr>
-    </table>
+        </div>
+    </main>
 </body>
 </html>
