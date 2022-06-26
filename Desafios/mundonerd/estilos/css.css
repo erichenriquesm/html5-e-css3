@@ -21,6 +21,11 @@ main{
     padding: 20px;
 }
 
+.titulo{
+    margin: 20px 0px;
+    font-size: 2.5em;
+}
+
 h1, h2{
     font-size: 2em;
     font-weight: 500;
@@ -80,8 +85,8 @@ footer p{
 }
 
 @media (max-width: 500px){
-    h1, h2{
-        font-size: 1.5em; 
+    h1, h2, .titulo{
+        font-size: 1.7em; 
     }
 
     p{

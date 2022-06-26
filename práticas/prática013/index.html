@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centralização de bloco</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div{
+            max-width: 600px;
+            height: 400px;
+            margin: auto;
+        }
+
+        caption{
+            font-size: 1.5em;
+            background-color: rgb(5, 5, 5);
+            color: white;
+            padding: 10px;
+        }
+        table{
+            width: 100%;
+            border-collapse: collapse;
+            width: 100%;
+            position: relative;
+            margin-top: 10px;
+        }
+
+        th{
+            background-color: gray;
+            color: white;
+        }
+
+        td,th{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
+        tbody > tr:nth-child(even){
+            background-color: lightgray;
+        }
+
+        tbody > tr:nth-child(odd){
+            background-color: white;
+        }
+
+        tfoot > tr > th{
+            background-color: black;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <table>
+            <caption>Juntando todo o conhecimento adquirido</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Viagens</th>
+                    <th scope="col">preço</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Havaí</td>
+                    <td>R$3500</td>
+                </tr>
+
+                <tr>
+                    <td>Nova York</td>
+                    <td>R$6000</td>
+                </tr>
+
+                <tr>
+                    <td>Maceió</td>
+                    <td>R$1500</td>
+                </tr>
+
+                <tr>
+                    <td>Recife</td>
+                    <td>R$2500</td>
+                </tr>
+
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td>R$500</td>
+                </tr>
+
+                <tr>
+                    <td>São Paulo</td>
+                    <td>R$350</td>
+                </tr>
+
+                <tr>
+                    <td>Paraná</td>
+                    <td>R$500</td>
+                </tr>
+
+                <tr>
+                    <td>Rio Grande do Sul</td>
+                    <td>R$800</td>
+                </tr>
+
+                <tr>
+                    <td>Acre</td>
+                    <td>R$3000</td>
+                </tr>
+
+                <tr>
+                    <td>Goiás</td>
+                    <td>R$2600</td>
+                </tr>
+
+                <tr>
+                    <td>Salvador</td>
+                    <td>R$4500</td>
+                </tr>
+
+                <tr>
+                    <td>Mato Grosso</td>
+                    <td>R$3500</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <th colspan="2">Por Eric</th>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
+</html>
