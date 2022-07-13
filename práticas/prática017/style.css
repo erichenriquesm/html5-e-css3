@@ -88,10 +88,14 @@ input{
 
 @media (max-width: 400px){
     .container{
-        height: 430px;
+        height: 445px;
     }
     #data{
-        width: 35%;
+        width: 40%;
+    }
+
+    #senha{
+        width: 40%;
     }
 }
 
