@@ -24,6 +24,11 @@ main{
 .titulo{
     margin: 20px 0px;
     font-size: 2.5em;
+    width: 70%;
+    line-height: 1.5em;
+    font-weight: bold;
+    text-shadow:
+    1px 1px 5px rgba(0, 0, 0, 0.418);
 }
 
 h1, h2{
@@ -83,6 +88,7 @@ footer{
 footer p{
     text-align: center;
 }
+
 
 @media (max-width: 500px){
     h1, h2, .titulo{
