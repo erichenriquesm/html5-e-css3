@@ -34,7 +34,7 @@ body{
 
 h2{
     font-size: 2em;
-    margin-bottom: 20px;
+    margin: 10px;
 }
 
 p{
@@ -94,7 +94,7 @@ input{
         transform: translate(-50%, -55%);
     }
     #data{
-        width: 45%;
+        width: 47%;
     }
 
     #senha{
