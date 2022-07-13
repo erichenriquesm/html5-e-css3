@@ -91,15 +91,23 @@ input{
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -55%);
-        height: 490px;
+        transform: translate(-50%, -60%);
     }
     #data{
-        width: 35%;
+        width: 45%;
     }
 
     #senha{
         width: 55%;
+    }
+
+    h2{
+        font-size: 1.5em;
+        margin-bottom: 20px;
+    }
+    
+    p{
+        margin: 5px 0px;
     }
 }
 
