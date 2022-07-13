@@ -52,6 +52,7 @@ input{
     color: white;
 }
 
+
 #email::placeholder{
     text-align: end;
 }
@@ -94,11 +95,11 @@ input{
         transform: translate(-50%, -50%);
     }
     #data{
-        width: 41%;
+        width: 47%;
     }
 
     #senha{
-        width: 47%;
+        width: 41.5%;
     }
 
     h2{
