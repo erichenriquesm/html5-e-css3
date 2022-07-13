@@ -88,10 +88,10 @@ input{
 
 @media (max-width: 400px){
     .container{
-        height: 450px;
+        height: 430px;
     }
     #data{
-        width: 40%;
+        width: 35%;
     }
 }
 
