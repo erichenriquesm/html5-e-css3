@@ -11,19 +11,19 @@
     <main>
         <div class="container">
             <h1 class="titulo">GameSM</h1>
-            <form action="" method="post">
+            <form action="" method="post" autocomplete="on" >
                 <h2><label for="nome">Nome</label></h2>
-                <input placeholder="Digite seu nome" type="text" name="nome" id="nome">
+                <input placeholder="Digite seu nome" type="text" name="nome" id="nome" minlength="5" maxlength="15" autocomplete="name">
 
                 <h2><label for="nome">Email</label></h2>
-                <input placeholder="@gmail.com" type="text" name="email" id="email">
+                <input placeholder="@gmail.com" type="text" name="email" id="email" autocomplete="email">
 
                 <p><label for="data">Data de Aniversário</label> e <label for="senha">Senha</label></p>
 
                 <div>
                     <input type="date" name="data" id="data">
 
-                    <input placeholder="Senha" type="password" name="senha" id="senha">
+                    <input placeholder="Senha" type="password" name="senha" id="senha" minlength="8" maxlength="20" autocomplete="off">
                     
                 </div>
 
