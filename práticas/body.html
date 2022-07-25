@@ -1,19 +1,54 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <title>Documento</title>
-    </head>
-
-    <body>
-        <h1>TESTE DE MEMÓRIA</h1>
-        <pre>
-            <h2>&lt!DOCTYPE html&gt
-&lthtml lang="pt-br"&gt
-&lhead&gt
-&lt&gt
-            </h2>
-        </pre>
-    </body>
-
-</html>
+programa
+{
+	inclua biblioteca Util --> ut
+	
+	funcao inicio()
+	{
+		enquanto(verdadeiro){
+			escreva("Jogo de pedra, papel e tesoura :)\n")
+		inteiro j, com
+		escreva("[0] PEDRA\n") 
+		escreva("[1] PAPEL\n")
+		escreva("[2] TESOURA\n")  
+		escreva("Digite sua escolha: ")
+		leia(j)
+		com = ut.sorteia(0, 2)
+		limpa()
+		enquanto(j < 0 ou j > 2){
+			escreva("Digite uma escolha válida: ")
+			leia(j)
+			limpa()
+			}
+			
+		se(j == 0  e com == 0 ){
+			escreva("Empate! Os dois escolheram pedra!\n")
+            limpa()	
+		}senao se(j == 0 e com == 1){
+			escreva("Você perdeu! Você escolheu pedra e o computador papel\n")
+            limpa()
+		}senao se(j == 0 e com == 2){
+			escreva("Você venceu! Você escolheu pedra e o computador tesoura!\n")
+            limpa()
+		}senao se(j == 1 e com == 0){
+			escreva("Você venceu! Você escolheu papel e o computador escolheu pedra! ")	
+		}senao se(j == 1 e com ==1){
+			escreva("Empate! Os dois escolheram tesoura!\n")
+            limpa()
+		}senao se(j == 1 e com == 2){
+			escreva("Você perdeu! Você escolheu papel e o computador escolheu tesoura!\n")
+            limpa()
+		}senao se(j == 2 e com == 0){
+			escreva("Você perdeu! Você escolheu tesoura e o computador pedra!\n")
+            limpa()
+			}senao se(j ==2 e com == 1){
+				escreva("Você venceu! Você escolheu tesoura e o computador papel\n")
+                limpa()
+		}senao{
+			escreva("Empate! Os dois escolheram tesoura!\n")
+            limpa()
+		}
+		}
+		
+		
+	}
+}
