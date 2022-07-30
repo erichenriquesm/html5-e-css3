@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de grid</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-auto-rows: auto;
+            
+            grid-template-areas: 
+            "box1 box1 box1"
+            "box2 box3 box3"
+            "box2 box3 box3"
+            "box4 box4 box4"   ;
+        }
+
+        .bloco{
+            border: 1px solid rgba(0, 0, 0, 0.815);
+        }
+
+        #b1{
+            grid-area: box1;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #b2{
+            grid-area: box2;
+            height: 100%;
+        }
+
+        #b3{
+            grid-area: box3;
+            height: 500px;
+        }
+
+        #b4{
+            grid-area: box4;
+            height: 100px;
+        }
+
+        ul{
+            margin: 10px 25px;
+            font-size: 1.5em;
+        }
+
+        @media (max-width:835px){
+            .container{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-auto-rows: auto;
+        }
+        }
+    
+        @media (min-width:937px){
+            .container{
+            display: grid;
+            grid-template-columns: .3fr 1fr 1fr;
+            grid-auto-rows: auto;
+        }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div  class="bloco" id="b1">
+            <h1>Título</h1>
+        </div>
+
+        <div  class="bloco"id="b2">
+            <ul>
+                <li>Seus Vídeos</li>
+            </ul>
+        </div>
+
+        <div class="bloco" id="b3">
+            <h1>B3</h1>
+        </div>
+
+        <div class="bloco" id="b4">
+            <h1>B4</h1>
+        </div>
+    </div>
+</body>
+</html>

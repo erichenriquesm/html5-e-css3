@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            margin: 15px 0px;
+        }
+
+        textarea{
+            display: block;
+            width: 80%;
+            height: 500px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+
+    <div>
+        <label for="iestado">Estado</label>
+        <select name="estado" id="iestado">
+            <optgroup label="Região Sul">
+                <option value="PR" selected>Paraná</option>
+
+                <option value="RG">Rio Grande do Sul</option>
+
+                <option value="SC">Santa Catarina</option>
+
+                <optgroup label="Região Sudeste">
+                    <option value="MG">Minas Gerais</option>
+
+                    <option value="RJ">Rio de Janeiro</option>
+
+                    <option value="SP">São Paulo</option>
+
+                </optgroup>
+            </optgroup>
+        </select>
+    </div>
+
+
+    <div>
+        <label for="iprof">Profissões</label>
+        <input type="text" name="pro" id="iprof" list="proflist">
+        <datalist id="proflist">
+            <option>Professor</option>
+            <option>Engenheiro</option>
+            <option>Médico</option>
+        </datalist>
+    </div>
+
+    <div>
+        <label for="itexto">Área de texto</label><br>
+        <textarea name="texto" id="itexto" cols="30" rows="10"></textarea>
+    </div>
+
+    <div>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </div>
+</body>
+</html>
