@@ -4,93 +4,235 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teste de grid</title>
+    <title>GridLayout</title>
     <style>
         *{
             margin: 0px;
             padding: 0px;
         }
+
+        ::-webkit-scrollbar{
+            width: 0px;
+            height:0px;
+        }
+
+        body{
+            background:black url("imgs/971.jpg") no-repeat center center fixed;
+            background-size: cover;
+            color: rgb(224, 147, 45);
+            font-family: Arial, Helvetica, sans-serif;
+            height: 100vh;
+        }
+
         .container{
+           
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-auto-rows: auto;
-            
+            grid-template-columns: .8fr 1fr 1fr;
             grid-template-areas: 
-            "box1 box1 box1"
-            "box2 box3 box3"
-            "box2 box3 box3"
-            "box4 box4 box4"   ;
+            "b1 b1 b1"
+            "b2 b3 b3"
+            "b2 b3 b3"
+            "b4 b4 b4";
+            grid-auto-rows: minmax(100px, auto);
+            grid-gap: 5px;
         }
 
         .bloco{
-            border: 1px solid rgba(0, 0, 0, 0.815);
+            background-color: rgba(0, 0, 0, 0.637);
+            transition: .5s;
+            padding: 10px;
         }
 
         #b1{
-            grid-area: box1;
-            height: 100px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            grid-area: b1;
+        }
+
+        fieldset{
+            width: 300px;
+            height: 50px;
+            border: 1px solid rgb(255, 196, 0);
+            margin-left: 10px;
+
+        }
+
+        h1{
+            color: rgb(180, 37, 216);
+            margin-bottom: 70px;
+        }
+
+        legend{
+            font-size: 1.8em;
+            margin-right: 5px;
+            color: rgb(180, 37, 216);
         }
 
         #b2{
-            grid-area: box2;
-            height: 100%;
+            grid-area: b2;
+
+        }
+
+        .ico{
+            width: 50px;
+            height: 50px;
+        }
+
+        #b2 > .boxico  > p{
+            margin-left: 15px;
+        } 
+
+        .boxico{
+            display: flex;
+            align-items: center;
+        }
+
+        #footer{
+            display: flex;
+            align-items: center;
+        }
+
+        #footer  > p{
+            margin-left: 15px;
+        }
+
+        a{
+            color: rgb(224, 147, 45);
+            text-decoration: none;
+        }
+
+        .caixaimg{
+            width: 80%;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 25px auto;
+            
+        }
+
+        .legenda{
+            text-align: center;
         }
 
         #b3{
-            grid-area: box3;
-            height: 500px;
+            grid-area: b3;
+            max-width: 900px;
+            align-items: center;
         }
 
-        #b4{
-            grid-area: box4;
-            height: 100px;
+        #foot{
+            background-color: rgba(0, 0, 0, 0.637);
+            transition: .5s;
+            padding: 10px;
+            height: 50px;
+            position: absolute;
+            bottom: 0px;
+            width: 98.5%;
         }
 
-        ul{
-            margin: 10px 25px;
-            font-size: 1.5em;
+
+        .bloco:hover{
+            background-color: rgba(0, 0, 0, 0.692);
         }
 
-        @media (max-width:835px){
+        @media (max-width:806px){
             .container{
+            height: 100vh;
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
-            grid-auto-rows: auto;
+            grid-auto-rows: minmax(100px, auto);
+            grid-gap: 5px;
         }
+        #b2{
+            display: none;
+            margin-left: 10px;
+
+
         }
-    
-        @media (min-width:937px){
-            .container{
-            display: grid;
-            grid-template-columns: .3fr 1fr 1fr;
-            grid-auto-rows: auto;
+        #b3{
+           grid-column: 1/4;
+
         }
 
         }
+
+
+        @media(min-width: 807px){
+            .container{
+            height: 100vh;
+            display: grid;
+            grid-template-columns: .6fr 2fr 1fr;
+            grid-template-areas: 
+            "b1 b1 b1"
+            "b2 b3 b3"
+            "b2 b3 b3"
+            "b4 b4 b4";
+            grid-auto-rows: minmax(100px, auto);
+            grid-gap: 5px;
+        }
+        #b2{
+            grid-area: b2;
+            margin-left: 10px;
+
+
+        }
+        #b3{
+            margin-left: 100px;
+            align-items: center;
+        }
+
+        #footer{
+            display: none;
+            align-items: center;
+        }
+        }
+
+        
+
+
     </style>
 </head>
 <body>
     <div class="container">
-        <div  class="bloco" id="b1">
-            <h1>Título</h1>
+        <div id="b1" class="bloco">
+            <fieldset>
+                <legend>Desenvolvimento Web</legend>
+            </fieldset>
         </div>
 
-        <div  class="bloco"id="b2">
-            <ul>
-                <li>Seus Vídeos</li>
-            </ul>
+        <div id="b2" class="bloco">
+           <div class="boxico">
+            <img class="ico" src="imgs/download.png" alt="github">
+            <p><a target="_blank" href="https://github.com/erichenriquesm">erichenriquesm</a></p>
+           </div>
         </div>
 
-        <div class="bloco" id="b3">
-            <h1>B3</h1>
-        </div>
+        <div id="b3" class="bloco">
+            <div>
+                <h1>Corpo de um Website</h1>
+            </div>
 
-        <div class="bloco" id="b4">
-            <h1>B4</h1>
-        </div>
+            <div class="caixaimg">
+                <div class="legenda">
+                    <img width="130" src="imgs/html.png" alt="html">
+                    <h2>HTML</h2>
+                </div>
+                <div class="legenda">
+                    <img width="100" src="imgs/css.png" alt="css">
+                    <h2>CSS</h2>
+                </div>
+
+                <div class="legenda">
+                    <img width="120" src="imgs/javascript.png" alt="js">
+                    <h2>JavaScript</h2>
+                </div>
+            </div>
+
+    </div>
+    <div id="foot">
+        <div id="footer" class="boxico">
+            <img class="ico" src="imgs/download.png" alt="github">
+            <p><a target="_blank" href="https://github.com/erichenriquesm">erichenriquesm</a></p>
+           </div>
     </div>
 </body>
 </html>
