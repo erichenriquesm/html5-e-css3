@@ -36,4 +36,5 @@
 }
 #box-4{
     grid-area: box-4;
+    background-color: lightgray;
 }
