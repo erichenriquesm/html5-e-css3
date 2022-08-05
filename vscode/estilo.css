@@ -21,7 +21,7 @@
 }
 
 body{
-    background: rgb(104, 99, 99) url("imagens/vscode.png") center center no-repeat fixed;
+    background: #1E2D40 url("imagens/vscode.png") center center no-repeat fixed;
     background-size: cover;
 }
 
