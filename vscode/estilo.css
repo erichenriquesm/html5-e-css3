@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    --titulo: 'titulo';
+    --conteudo: 'cont' ;
+}
+
+@font-face {
+    font-family: 'titulo';
+    src: url('fontes/Azonix.otf');
+}
+
+@font-face {
+    font-family: 'cont';
+    src: url('fontes/Walkway\ Expand\ SemiBold.ttf');
+}
+
+body{
+    background: rgb(104, 99, 99) url("imagens/vscode.png") center center no-repeat fixed;
+    background-size: cover;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    height: 120px;
+    background-color: rgba(0, 0, 0, 0.308);
+    padding: 10px;
+}
+
+header > h1 > a{
+    color: white;
+    font-family: var(--titulo);
+    font-size: 1.5em;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.445);
+    text-decoration: none;
+    transition: .5s;
+}
+
+header > h1 > a:hover{
+    color: #1E2D40;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    transition: .5s;
+}
+
+a:hover{
+    color: rgba(190, 7, 190, 0.795);
+}
+
+main{
+    max-width: 1000px;
+    background-color: rgba(0, 0, 0, 0.308);
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+h2{
+    color: white;
+    font-family: var(--conteudo);
+    font-size: 1.5em;
+    margin: 15px 0px;
+}
+
+p{
+    font-size: 1.2em;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.3em;
+    font-weight: 400;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+img{
+    display: block;
+    margin: auto;
+    width: 80%;
+}
+
+ul{
+    list-style: disc;
+    margin-left: 15px;
+}
+
+li{
+    color: white;
+    margin-bottom: 10px;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    padding: 10px;
+}
+

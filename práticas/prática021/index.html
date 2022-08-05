@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body{
+            background-color: black;
+        }
+
+        main{
+            min-width: 400px;
+            height: 500px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 10px;
+
+        }
+
+        fieldset{
+            padding: 7px;
+        }
+
+        input{
+            height: 30px;
+            width: 100%;
+        }
+
+        #checar{
+            height: 30px;
+            width: 150px;
+            border-radius: 8px;
+            border: 0px;
+            background-color: black;
+            color: white;
+            float: right;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <fieldset>
+            <legend>Nome</legend>
+            <input type="text" name="nome" id="nome" placeholder="Digite seu nome" maxlength="30" autocomplete="name">
+        </fieldset>
+
+        <div>
+            <p id="res">.</p>
+            <input id="checar" type="button" value="Checar" onclick="checar()">
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
