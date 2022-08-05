@@ -67,24 +67,30 @@ main{
 h2{
     color: white;
     font-family: var(--conteudo);
-    font-size: 1.5em;
+    font-size: 2em;
     margin: 15px 0px;
+    font-weight: bold;
 }
 
 h3{
     font-size: 1.5em;
     color: white;
     font-family: 'Courier New', Courier, monospace;
+    margin: 10px 0px;
 }
 
 p{
     font-size: 1.2em;
     color: white;
-    font-family: 'Courier New', Courier, monospace;
-    line-height: 1.3em;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5em;
     font-weight: 400;
     text-align: justify;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.txtmin{
+    max-width: 800px;
 }
 
 img{
@@ -92,6 +98,15 @@ img{
     margin: 15px auto;
     width: 80%;
     color: white;
+    transition: .5s;
+}
+
+.direita:hover{
+    transform: translate(10%, -5%);
+}
+
+.esquerda:hover{
+    transform: translate(-10%, -5%);
 }
 
 ul{
@@ -102,6 +117,7 @@ ul{
 li{
     color: white;
     margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 footer{
@@ -115,5 +131,13 @@ footer{
 @media (max-width:650px){
     img{
         width: 100%;
+    }
+
+    .direita:hover{
+        transform: translate(2%, -5%);
+    }
+    
+    .esquerda:hover{
+        transform: translate(-2%, -5%);
     }
 }
