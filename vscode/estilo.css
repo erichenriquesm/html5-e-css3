@@ -71,6 +71,12 @@ h2{
     margin: 15px 0px;
 }
 
+h3{
+    font-size: 1.5em;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
 p{
     font-size: 1.2em;
     color: white;
@@ -83,8 +89,9 @@ p{
 
 img{
     display: block;
-    margin: auto;
+    margin: 15px auto;
     width: 80%;
+    color: white;
 }
 
 ul{
