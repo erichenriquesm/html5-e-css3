@@ -103,10 +103,12 @@ img{
 
 .direita:hover{
     transform: translate(10%, -5%);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.404);
 }
 
 .esquerda:hover{
     transform: translate(-10%, -5%);
+    box-shadow:  5px 5px 5px rgba(0, 0, 0, 0.404);
 }
 
 ul{
@@ -135,9 +137,11 @@ footer{
 
     .direita:hover{
         transform: translate(2%, -5%);
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.404);
     }
     
     .esquerda:hover{
         transform: translate(-2%, -5%);
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.404);
     }
 }
