@@ -56,6 +56,10 @@ a:hover{
     color: #5581b6;
 }
 
+.tuto{
+    margin-top: 10px;
+    text-align: center;
+}
 aside{
     background-color: rgba(0, 0, 0, 0.308);
     padding: 20px;
@@ -193,7 +197,10 @@ footer{
 
     aside{
         display: block;
-        align-items: center;
+    }
+
+    aside > p {
+        text-align: center;
     }
 
     article > iframe{
