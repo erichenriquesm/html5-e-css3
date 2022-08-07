@@ -176,6 +176,12 @@ footer{
     }
 }
 
+@media(max-width: 450px){
+    article > iframe{
+        height: 200px;
+    }
+}
+
 
 @media (min-width: 1255px){
     main{
@@ -191,6 +197,10 @@ footer{
     }
 
     article > iframe{
+        display: none;
+    }
+
+    .tuto{
         display: none;
     }
 }
