@@ -151,10 +151,13 @@ li{
 
 footer{
     display: flex;
-    align-items: center;
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.308);
     padding: 10px;
+}
+
+footer > p{
+    margin: 10px 0px; 
 }
 
 @media (max-width:650px){
