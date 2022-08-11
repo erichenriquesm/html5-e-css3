@@ -17,20 +17,27 @@ main{
 }
 
 header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
+    padding:20px;
 }
 
 .links{
-    display: flex;
+    display: none;
     gap: 15px;
 }
 
+nav{
+    margin-top: 15px;
+    padding: 10px;
+}
+
+nav > a{
+    margin-left: 10px;
+}
+
+
 a{
     text-decoration: none;
-    font-size: .8em;
+    font-size: 1.1em;
     transition: .5s;
     color: blue;
     
@@ -73,6 +80,22 @@ footer{
         height: 412px;
     }
 
+
+    nav{
+        display: none;
+    }
+
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding:20px;
+    }
+
+    .links{
+        display: flex;
+    }
+
     a{
         text-decoration: none;
         font-size: 1.1em;
@@ -81,4 +104,5 @@ footer{
         
     }
 }
+
 
