@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+
+        /*Declarações Gerais*/
+        *{
+         margin: 0px;
+         padding: 0px;
+        }
+
+        body{
+            width: 100vw;
+            height: 100vh;
+        } 
+
+        /*Declarações Retrato*/
+        @media screen and (orientation: portrait) {
+            body{
+                background: url('imgs/cev-portrait.jpg')  center bottom fixed;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+        }
+
+        /**Declarações Paisagem*/
+        @media screen and (orientation: landscape){
+            body{
+                background: url('imgs/cev-landscape.jpg') no-repeat left bottom fixed;
+                background-size: cover;
+            }
+        }
+    </style>
+</head>
+<body>
+</body>
+</html>
