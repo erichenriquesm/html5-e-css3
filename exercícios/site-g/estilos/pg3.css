@@ -16,7 +16,6 @@ main{
     padding: 10px;
 }
 
-
 header{
     padding:20px;
 }
@@ -27,7 +26,6 @@ header{
 }
 
 nav{
-
     margin-top: 15px;
     padding: 10px;
 }
@@ -77,10 +75,6 @@ footer{
     display: flex;
     justify-content: center;
     margin: 10 0;
-}
-
-ol{
-    margin-left: 40px;
 }
 
 @media (min-width: 596px){
