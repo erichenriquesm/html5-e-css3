@@ -5,6 +5,8 @@
     padding: 0px;
 }
 
+
+
 body{
     font-family: Arial, Helvetica, sans-serif;
     background: url('https://marquesfernandes.com/wp-content/uploads/2020/01/1555172-768x432.jpg') no-repeat center center fixed;
@@ -63,16 +65,16 @@ nav{
     margin-top: 50px;
 }
 
-label{
+fieldset{
     width: 100px;
-    height: 25px;
+    height: 35px;
     margin: 10px;
     border: 1px solid yellow;
-    transition: .7s;
+    transition: .5s;
 }
 
-label:hover{
-    background-color: black;
+fieldset:hover{
+    transform: translate(5px, -5px);
 }
 
 

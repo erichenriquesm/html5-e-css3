@@ -1,9 +1,9 @@
-@media (max-width:500px){
+@media (max-width:450px){
     main{
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -45%);
+        transform: translate(-50%, -35%);
 
     
     }
@@ -14,7 +14,7 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, -45%);
         width: 900px;
     
     }
