@@ -1,11 +1,18 @@
-@media (max-width:697px){
+@media (max-width:500px){
+    main{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -25%);
+    }
+}
+
+@media (min-width:697px){
     main{
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -35%);
-
-    
     }
 }
 
