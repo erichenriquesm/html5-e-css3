@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM1</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 90%;
+            height: 350px;
+        }
+
+        img{
+            width: 100%;
+
+        }
+
+        h1, h2{
+            margin:10px 0px ;
+        }
+    </style>
+</head>
+<body>
+    <div id="caixa">
+        <h1 class="titulo">Conteudo</h1>
+    </div>
+</body>
+
+<script>
+    let caixa_img = document.querySelector('#caixa');
+
+
+    let p = document.createElement('p');
+    caixa_img.append(p);
+
+    p.innerText = 'Olá'
+    caixa_img.removeChild(p);
+
+    // let img = document.createElement('img')
+
+    // let title = document.querySelectorAll('.h1')
+
+    // img.setAttribute('src', 'imgs/cadastro 2.0.png')
+
+    // caixa_img.append(img)
+
+    
+
+</script>
+
+</html>

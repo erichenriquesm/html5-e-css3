@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: url('https://marquesfernandes.com/wp-content/uploads/2020/01/1555172-768x432.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: yellow;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.692);
+}
+
+main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0.616);
+
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    height: 150px;
+
+}
+
+
+img{
+    margin-top: -25px;
+    border-radius: 50%;
+    height: 185px;
+    width: 185px;
+    background-color: lightgray;
+}
+
+h1{
+    margin: 20px 0px;
+    text-align: center;
+}
+
+article{
+    width: 95%;
+    margin: auto;
+    padding: 10px;
+}
+
+p{
+    text-align: justify;
+    line-height: 1.5em;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    margin-top: 50px;
+}
+
+label{
+    width: 100px;
+    height: 25px;
+    margin: 10px;
+    border: 1px solid yellow;
+    transition: .7s;
+}
+
+label:hover{
+    background-color: black;
+}
+
+
