@@ -9,7 +9,7 @@
 
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background: url('https://marquesfernandes.com/wp-content/uploads/2020/01/1555172-768x432.jpg') no-repeat center center fixed;
+    background: url('https://marquesfernandes.com/wp-content/uploads/2020/01/1555172-768x432.jpg') no-repeat top left fixed;
     background-size: cover;
     color: yellow;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.692);
@@ -36,8 +36,8 @@ header{
 img{
     margin-top: -25px;
     border-radius: 50%;
-    height: 185px;
-    width: 185px;
+    height: 175px;
+    width: 175px;
     background-color: lightgray;
 }
 
@@ -75,6 +75,7 @@ fieldset{
 
 fieldset:hover{
     transform: translate(5px, -5px);
+    cursor: pointer ;
 }
 
 
