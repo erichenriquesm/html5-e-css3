@@ -23,11 +23,11 @@ function mostrarPerfil(link, nome, des, fundo){
 
 function per1(){
 
-    let perfil1 = criarPerfil('per1/user.png', 'Eric', 'Olá, sou criador deste site em que mostro um pouco de HTML5, CSS3 E JavaScript utilizando domínio de objetos para deixar todas as informações dinâmicas. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta fugit, sunt natus eveniet voluptas officiis quod. Similique, sed amet expedita quibusdam nisi quasi ab unde enim neque! Cupiditate, expedita obcaecati?', 'https://marquesfernandes.com/wp-content/uploads/2020/01/1555172-768x432.jpg')
+    let perfil1 = criarPerfil('per1/user.png', 'Eric', 'Olá, sou criador desse site em que mostro um pouco de HTML5, CSS3 E JavaScript. Utilizando tratamento de objetos e funções para deixar todas as informações dinâmicas. Tudo abaixo é para encher linguiça :) ipsum dolor, sit amet consectetur adipisicing elit. Soluta fugit, sunt natus eveniet voluptas officiis quod. Similique, sed amet expedita quibusdam nisi quasi ab unde enim neque! Cupiditate, expedita obcaecati?', 'https://marquesfernandes.com/wp-content/uploads/2020/01/1555172-768x432.jpg')
 
     let nav = document.querySelector('nav');
-    nav.style.marginTop = '100px';
-
+    nav.style.marginTop = '60px';
+    nav.style.marginBottom = '0px';
     let fields = document.querySelectorAll('fieldset')
     fields.forEach((field) =>{ 
     field.style.color = 'yellow'
@@ -48,7 +48,8 @@ function per2(){
     let perfil2 = criarPerfil('per2/user.png', 'Leonardo', 'Olá, sou Leonardo, gosto de Star Wars e hoje estou dentro do projeto do meu amigo, espero que gostem. ectetur adipisicing elit. Soluta fugit, sunt natus eveniet voluptas officiis quod. Similique, sed amet expedita quibusdam nisi quasi ab unde enim neque! Cupiditate,ectetur adipisicing elit. Soluta fugit, sunt natus eveniet voluptas officiis quod. Similique, sed amet expedita quibusdam nisi quasi ab unde enim neque! Cupiditate,', 'https://mcdn.wallpapersafari.com/medium/38/65/Fcx7LA.jpg');
 
     let nav = document.querySelector('nav');
-    nav.style.marginTop = '77px';
+    nav.style.marginTop = '55px';
+    nav.style.marginBottom = '14px';
 
     let fields = document.querySelectorAll('fieldset')
     fields.forEach((field) =>{ 
@@ -70,8 +71,10 @@ function per3(){
 
     let perfil3 = criarPerfil('per3/user (2).jpeg', 'Yasmim', 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta fugit, sunt natus eveniet voluptas officiis quod. Similique, sed amet expedita quibusdam nisi quasi ab unde enim neque! Cupiditate, expedita obcaecati?', 'per3/back.png')
 
+
     let nav = document.querySelector('nav');
-    nav.style.marginTop = '100px';
+    nav.style.marginBottom = '1px';
+    nav.style.marginTop = '88px';
 
     let fields = document.querySelectorAll('fieldset')
     fields.forEach((field) =>{ 

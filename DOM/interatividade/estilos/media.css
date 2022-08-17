@@ -37,10 +37,9 @@
 
     article{
         display: block;
-
         width: 85%;
         padding: 10px;
-        margin: 10px auto;
+        margin: 15px auto;
     }
 
     nav{
@@ -48,6 +47,5 @@
         align-items: center;
         justify-content: center;
         height: 50px;
-        margin-top: 100px;
     }
 }
