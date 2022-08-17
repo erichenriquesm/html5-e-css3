@@ -35,14 +35,15 @@ header{
 
 img{
     margin-top: -25px;
+    margin-bottom: -25px;
     border-radius: 50%;
-    height: 175px;
-    width: 175px;
+    height: 200px;
+    width: 200px;
     background-color: lightgray;
 }
 
 h1{
-    margin: 20px 0px;
+    margin: 50px 0px;
     text-align: center;
 }
 
