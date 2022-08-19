@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: lightgray;
+}
+
+header{
+
+}
+
+header > menu{
+    
+}
+
+main{
+
+}
+
+main > article{
+
+}
