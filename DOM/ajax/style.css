@@ -1,0 +1,38 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    padding: 20px;
+    text-align: center;
+}
+
+main{
+    max-width: 500px;
+    margin: auto;
+}
+
+p{
+    font-size: 1.2em;
+    line-height: 1.3em;
+    margin: 10px 0px;
+}
+
+hr{
+    color: black;
+}
+
+#cep{
+    width: 90%;
+    padding: 20px;
+    margin-bottom: 20px ;
+}
+
+
+button{
+    width: 150px;
+    padding: 10px;
+}
+
+
