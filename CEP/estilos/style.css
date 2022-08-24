@@ -60,8 +60,12 @@ a{
     font-family: var(--titulo);
 }
 
-a:hover, main header h1:hover{
+.trajetos:hover, main header h1:hover{
     color: yellow;
+}
+
+a:hover{
+    color: blue;
 }
 
 main .thumb{
@@ -180,7 +184,9 @@ ul li{
     background-color: white;
 }
 
-
+#log{
+    margin-left: 22px;
+}
 
 button{
     display: block;
