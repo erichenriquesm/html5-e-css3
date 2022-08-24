@@ -12,8 +12,8 @@
 </head>
 
 <body>
-    <main>
-
+    <main id="init">
+    
         <header>
             <a href="index.html">
                 <h1>Meu CEP</h1>
@@ -29,7 +29,7 @@
             <h2>O QUE É CEP?</h2>
         </div>
 
-        <div class="caixa">
+        <div  class="caixa">
             <article>
                 <h2 class="marcadores" style="color: green ;">Explicação</h2>
                 <p><strong>CEP</strong> é a sigla de Código de Endereçamento Postal, criado e utilizado pelos Correios
@@ -75,6 +75,7 @@
 
                 <div class="inputArea">
                     <div><input type="number" name="cep" id="cep" placeholder="Digite um CEP" autocomplete="off"></div>
+                    <p id="log"></p>
                     <div>
                         <button id="puxar">Puxar CEP</button>
                     </div>
@@ -92,6 +93,10 @@
                     <h3><a href="#">10 passos para ter uma ótima saúde</a></h3>
                 </div>
             </aside>
+        </div>
+
+        <div class="return">
+            <a href="#init"><img src="ico.png" alt="icone"></a>
         </div>
 
         <footer>

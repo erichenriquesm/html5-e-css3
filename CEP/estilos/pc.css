@@ -1,4 +1,16 @@
 @media (min-width:1020px){
+
+    main header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: sticky;
+        top: 0;
+        color: white;
+        background-color: black;
+        padding: 30px;
+    }
+
     main .caixa{
         display: grid;
         grid-template-columns: 1fr .4fr;

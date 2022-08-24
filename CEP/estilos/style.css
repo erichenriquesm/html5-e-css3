@@ -1,7 +1,20 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,200&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+:root{
+    --titulo: 'Montserrat', sans-serif;
 }
 
 main{
@@ -17,13 +30,14 @@ main header{
     top: 0;
     color: white;
     background-color: black;
-    padding: 30px;
+    padding: 20px;
 }
 
 main header h1{
     font-size: 1.5em;
     transition: .3s;
     color: white;
+    font-family: var(--titulo);
 }
 
 .trajetos{
@@ -33,15 +47,21 @@ main header h1{
     margin-left: 10px;
 }
 
+.marcadores{
+    font-size: 1.5em;
+    padding-bottom: 10px;
+}
+
 a{
     transition: .3s;
     text-decoration: none;
     color: black;
     padding:10px 0px;
+    font-family: var(--titulo);
 }
 
 a:hover, main header h1:hover{
-    text-decoration: underline;
+    color: yellow;
 }
 
 main .thumb{
@@ -56,8 +76,9 @@ main .thumb{
 }
 
 main .thumb h2{
-    font-size:2.5em ;
+    font-size:3em ;
     font-weight: 500;
+    font-family: var(--titulo);
 }
 
 main article{
@@ -86,11 +107,12 @@ main aside{
 }
 
 .art a{
-    margin-left: 10px;
+    font-size: 1em;
     
 }
 
 .art h2{
+    display: block;
     margin-bottom: 10px;
     display: block;
 }
@@ -115,6 +137,20 @@ main footer p{
 
 main footer p a{
     color: white;
+}
+
+.return{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.return img{
+    width: 60px;
+
 }
 
 img{
@@ -144,10 +180,12 @@ ul li{
     background-color: white;
 }
 
+
+
 button{
     display: block;
     margin:15px auto;
-    padding: 10px;
+    padding: 20px;
     border-radius: 5px;
     width: 40%;
     border: 1px solid black;
