@@ -104,10 +104,8 @@ main aside{
     padding: 10px;
 }
 
-.art{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+aside{
+    display: none;
 }
 
 .art a{

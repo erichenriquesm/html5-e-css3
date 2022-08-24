@@ -47,6 +47,10 @@
         font-size: 2em;
     }
 
+    aside{
+        display: block;
+    }
+
     .art{
         display: block;
     }
