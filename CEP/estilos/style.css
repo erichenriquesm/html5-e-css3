@@ -110,7 +110,11 @@ main footer{
 }
 
 main footer p{
-    padding: 10px 0px;
+    margin: 10px;
+}
+
+main footer p a{
+    color: white;
 }
 
 img{
@@ -133,4 +137,21 @@ ul li{
     border-radius: 5px;
     display: block;
     margin: auto;
+    border: 1px solid black;
+}
+
+#cep:focus{
+    background-color: white;
+}
+
+button{
+    display: block;
+    margin:15px auto;
+    padding: 10px;
+    border-radius: 5px;
+    width: 40%;
+    border: 1px solid black;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
 }
