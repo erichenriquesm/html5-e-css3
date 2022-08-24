@@ -1,0 +1,30 @@
+{
+  "filmes": [
+    {
+      "id": 5,
+      "titulo": "Animais Fantasticos",
+      "ano": 2022,
+      "roteiro": "J.K",
+      "imagem": "foto.jpg",
+      "produtoraId": 1
+    },
+    {
+      "id": 2,
+      "titulo": "One Piece Red",
+      "ano": 2022,
+      "roteiro": "Oda - Toei Animation",
+      "imagem": "onepiece.png",
+      "produtoraId": "2"
+    }
+  ],
+  "produtoras": [
+    {
+      "nome": "Wanner Bros",
+      "id": 1
+    },
+    {
+      "nome": "Toei Animation",
+      "id": 2
+    }
+  ]
+}

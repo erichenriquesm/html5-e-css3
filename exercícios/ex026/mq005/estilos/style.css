@@ -6,11 +6,17 @@
 }
 
 body{
-    background-color: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to top, gray, rgb(163, 162, 162), lightgray);
 }
 
 header{
+    background-color: gray;
+}
 
+header h1{
+    padding: 10px;
+    text-align: center;
 }
 
 header > menu{
@@ -18,9 +24,42 @@ header > menu{
 }
 
 main{
-
+    width: 90%;
+    margin: auto;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
 }
 
-main > article{
+main > article > p{
+    text-align: justify;
+    margin-bottom: 10px;
+    text-indent: 20x;
+}
 
+main > article > h2{ 
+    padding-bottom: 20px;
+}
+
+menu{
+    display: block;
+}
+
+menu > li{
+    list-style-type: none;
+}
+
+menu > ul > li > a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    background-color: rgb(87, 87, 87);
+    text-align: center;
+    color: white;
+    border-top: 2px solid rgba(172, 171, 171, 0.466);
+}
+
+menu > ul > li > a:hover{
+    background-color: rgb(105, 105, 105);
 }

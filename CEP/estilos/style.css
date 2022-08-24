@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main{
+    max-width: 2000px;
+    margin: auto;
+}
+
+main header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    color: white;
+    background-color: black;
+    padding: 30px;
+}
+
+main header h1{
+    font-size: 1.5em;
+    transition: .3s;
+    color: white;
+}
+
+.trajetos{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    margin-left: 10px;
+}
+
+a{
+    transition: .3s;
+    text-decoration: none;
+    color: black;
+    padding:10px 0px;
+}
+
+a:hover, main header h1:hover{
+    text-decoration: underline;
+}
+
+main .thumb{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    background-color: rgba(211, 211, 211, 0.185);
+    border: 1px solid rgba(0, 0, 0, 0.185);
+    box-shadow: inset 
+    3px 3px 3px rgba(0, 0, 0, 0.329);
+}
+
+main .thumb h2{
+    font-size:2.5em ;
+    font-weight: 500;
+}
+
+main article{
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+
+main article h2{
+    display: block;
+    padding-bottom: 20px;
+    font-size: 1.5em;
+}
+
+main aside{
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+.art{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.art a{
+    margin-left: 10px;
+    
+}
+
+.art h2{
+    margin-bottom: 10px;
+    display: block;
+}
+
+p{
+    text-align: justify;
+    line-height: 1.5em;
+    margin-bottom: 20px;
+}
+
+main footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+}
+
+main footer p{
+    padding: 10px 0px;
+}
+
+img{
+    width: 100%;
+}
+
+ul li{
+    margin: 10px 20px;
+}
+
+.inputArea{
+    width: 100%;
+    margin: auto;
+}
+
+#cep{
+    width: 90%;
+    height: 40px;
+    padding: 10px;
+    border-radius: 5px;
+    display: block;
+    margin: auto;
+}
