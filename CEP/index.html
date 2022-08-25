@@ -5,38 +5,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
     <link rel="stylesheet" href="estilos/style.css" media="all">
     <link rel="stylesheet" href="estilos/pc.css">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script src="ajax.js"></script>
     <title>MEU CEP</title>
 </head>
 
 <body>
     <main id="init">
-    
-        <header>
-            <a href="index.html">
-                <h1>Meu CEP</h1>
-            </a>
 
-            <div class="links">
-                <a class="trajetos" target="_blank" href="https://github.com/erichenriquesm">GitHub</a>
-                <a class="trajetos" target="_blank" href="https://viacep.com.br/">ViaCEP</a>
+        <header>
+            <div class="flex">
+                <a href="index.html">
+                    <h1>Meu CEP</h1>
+                </a>
+                <div class="links">
+                    <a class="trajetos separar " target="_blank" href="https://github.com/erichenriquesm">GitHub</a>
+                    <a class="trajetos" target="_blank" href="https://viacep.com.br/">ViaCEP</a>
+                </div>
+                <span onclick="abrir()" id="burguer" class="material-symbols-outlined">
+                    menu
+                </span>
             </div>
+
+            <nav>
+                <a class="trajetos separar" target="_blank" href="https://github.com/erichenriquesm">GitHub</a>
+                <a class="trajetos" target="_blank" href="https://viacep.com.br/">ViaCEP</a>
+            </nav>
         </header>
 
         <div class="thumb">
             <h2>O QUE É CEP?</h2>
         </div>
 
-        <div  class="caixa">
+        <div class="caixa">
             <article>
                 <h2 class="marcadores" style="color: green ;">Explicação</h2>
                 <p><strong>CEP</strong> é a sigla de Código de Endereçamento Postal, criado e utilizado pelos Correios
                     para facilitar o encaminhamento e a entrega das correspondências aos destinatários. O
                     <strong>CEP</strong> é uma informação indispensável na correspondência, pois identifica todos os
-                    detalhes do endereço de quem vai receber ou de quem está enviando a correspondência.</p>
+                    detalhes do endereço de quem vai receber ou de quem está enviando a correspondência.
+                </p>
 
                 <p>No Brasil o número do <strong>CEP</strong> é formado por oito algarismos, que identificam o endereço
                     do destinatário da correspondência, facilitando a sua entrega.</p>

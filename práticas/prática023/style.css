@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    color: white;
+    background-color: black;
+}
+
+menu{
+    display: none;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 50px;
+    color: white;
+    background-color: black;
+    padding: 20px;
+}
+
+#menu{
+    cursor: pointer;
+    font-size: 1.8em;
+}
+
+.links{
+    display:none;
+}
+
+@media (min-width:700px){
+    #menu{
+        display: none;
+    }
+}

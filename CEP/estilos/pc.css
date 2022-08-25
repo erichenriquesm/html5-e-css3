@@ -1,15 +1,27 @@
 @media (min-width:1020px){
 
     main header{
+        position: sticky;
+        top: 0;
+    }
+
+    main header .flex{
         display: flex;
         align-items: center;
         justify-content: space-between;
-        position: sticky;
-        top: 0;
         color: white;
         background-color: black;
         padding: 30px;
     }
+
+    .links{
+        display: flex;
+    }
+    
+    #burguer{
+        display: none;
+    }
+    
 
     main .caixa{
         display: grid;

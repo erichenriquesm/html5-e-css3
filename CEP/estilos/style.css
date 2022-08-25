@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,200&display=swap');
 
 
-*{
+*{ 
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -23,14 +23,23 @@ main{
 }
 
 main header{
+    position: sticky;
+    top: 0;
+}
+
+main header .flex{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: sticky;
-    top: 0;
     color: white;
     background-color: black;
     padding: 20px;
+}
+
+main header nav{
+    display: none;
+    height: 60px;
+    background-color: black;
 }
 
 main header h1{
@@ -40,11 +49,25 @@ main header h1{
     font-family: var(--titulo);
 }
 
+.links{
+    display: none;
+}
+
+#burguer{
+    font-size: 2em;
+    cursor: pointer;
+}
+
 .trajetos{
     text-decoration: none;
     color: white;
     font-size: 1.2em;
     margin-left: 10px;
+}
+
+.separar::after{
+    content: ' | ';
+    color: white;
 }
 
 .marcadores{

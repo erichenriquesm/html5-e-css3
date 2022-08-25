@@ -1,3 +1,13 @@
+function abrir(){
+    let nav = document.querySelector("nav");
+
+    if(nav.style.display == 'flex'){
+        nav.style.display = 'none'
+    }else{
+        nav.style.display = 'flex'
+    }
+}
+
 function requerirCEP(){
     const cep = document.querySelector("#cep").value;
     let log = document.querySelector("#log");
