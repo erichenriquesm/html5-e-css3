@@ -209,6 +209,12 @@ ul li{
     margin-left: 22px;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
 button{
     display: block;
     margin:15px auto;
