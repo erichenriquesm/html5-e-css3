@@ -1,0 +1,21 @@
+@media (min-width:768px){
+    #burguer{
+        display: none;
+    }
+
+    menu{
+        display: block;
+    }
+
+    menu ul{
+        display: flex;
+        margin-left: 10px;
+        gap: 10px;
+        list-style-type: none;
+    }
+
+    menu ul li{
+        border-radius: 10px;
+    }
+
+}

@@ -7,7 +7,7 @@
 
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-image: linear-gradient(to top, gray, rgb(163, 162, 162), lightgray);
+    background-image: linear-gradient(to top, gray, rgb(163, 162, 162));
 }
 
 header{
@@ -38,7 +38,7 @@ header > menu{
 }
 
 main{
-    width: 90%;
+    max-width: 900px;
     margin: auto;
     background-color: white;
     padding: 10px;
@@ -62,6 +62,7 @@ menu{
 
 menu > li{
     list-style-type: none;
+    border-radius: 10px;
 }
 
 menu > ul > li > a{

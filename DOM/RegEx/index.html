@@ -1,12 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #txt {
+            height: 10px;
+            padding: 20px;
+            margin: 10px;
+        }
+
+        input:invalid {
+            animation: shake .3s;
+        }
+
+        @keyframes shake {
+            25% {
+                transform: translateX(4px);
+            }
+
+            50% {
+                transform: translateX(-4px);
+            }
+
+            55% {
+                transform: translateX(4px);
+            }
+        }
+
+        button {
+            background-color: black;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px;
+            cursor: pointer;
+        }
+    </style>
 </head>
+
 <body>
-    <input type="number" name="n" id="n" pattern="^(\d{2}\)\d{1}\d{4,5}-\d{4}$">
+    <div><input type="text" name="txt" id="txt" placeholder="Digite seu nome" maxlength="14"></div>
+
+    <button onclick="mostrar()">Mostrar</button>
 </body>
+<script>
+    let log;
+    let input = document.querySelector('#txt');
+    input.addEventListener('keypress', () => {
+        let in_length = input.value.length;
+        if (in_length === 3 || in_length === 7) {
+            input.value += '.'
+        } else if (in_length === 11) {
+            input.value += '-'
+        }
+        log = input.value;
+    })
+
+    function mostrar() {
+        alert(log)
+    }
+
+</script>
+
 </html>
