@@ -1,0 +1,32 @@
+@media (max-width:620px){
+    #content main{
+        display: grid;
+        padding: 10px;
+        grid-template-columns:1fr ;
+        gap: 10px;
+    }
+
+    main img{
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+}
+
+@media (min-width:621px){
+    header #bar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 900px;
+        margin: auto;
+        color: white;
+        padding: 20px;
+        font-size: 2em;
+    }
+
+    #txt h1{
+        font-size: 4em;
+        padding-bottom: 10px;
+    }
+}
