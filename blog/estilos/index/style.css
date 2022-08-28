@@ -31,13 +31,16 @@ header #bar{
     color: rgb(50, 255, 50);
 }
 
+a{
+    text-decoration: none;
+    color: black;
+}
+
 #bar button{
     padding: 10px;
     background-color:rgb(50, 255, 50) ;
     border: none;
     border-radius: 5px;
-    color: black;
-    cursor: pointer;
 }
 
 header #txt{

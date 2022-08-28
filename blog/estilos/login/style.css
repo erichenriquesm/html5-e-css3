@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 450px;
+    background-color: #333333;
+    background: url('https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg?cs=srgb&dl=pexels-pixabay-262978.jpg&fm=jpg&w=5616&h=3744') no-repeat top left;
+    background-size: cover;
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.664);
+}
+
+
+
+section h1{
+    color: #333333;
+    font-size: 4em;
+}
+
+section div h1 span{
+    color:rgb(50, 255, 50);
+}
+
+section div h3{
+    text-align: center;
+    font-size: 1.5em;
+    margin: 10px auto;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+
+main{
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+main h2{
+    text-align: center;
+    margin: 20px auto;
+    font-size: 2em;
+}
+
+main form{
+    max-width: 700px;
+    margin: auto;
+}
+
+form label{
+    font-size: 2em;
+    cursor: pointer;
+}
+
+div input{
+    width: 90%;
+    height: 40px;
+    margin: 20px 0;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+}
+
+#sub{
+    width: 100px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+footer{
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.redes .icons{
+    width: 30px;
+    margin-left: 10px;
+}
+
