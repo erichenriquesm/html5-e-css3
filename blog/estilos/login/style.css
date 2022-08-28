@@ -71,6 +71,10 @@ div input{
     outline: none;
 }
 
+div input:focus{
+    background-color: white;
+}
+
 #sub{
     width: 100px;
     padding: 10px;
