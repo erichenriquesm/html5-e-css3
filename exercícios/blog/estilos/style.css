@@ -37,6 +37,7 @@ header #bar{
     border: none;
     border-radius: 5px;
     color: black;
+    cursor: pointer;
 }
 
 header #txt{

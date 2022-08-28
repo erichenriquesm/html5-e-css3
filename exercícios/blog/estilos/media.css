@@ -1,4 +1,23 @@
+@media (max-width:400px){
+    footer p{
+        font-size: .8em;
+    }
+}
+
 @media (max-width:620px){
+    header{
+        height: 300px;
+        background-color: #333333;
+        box-shadow: 1px 1px 1px black;
+    }
+
+    header #txt{
+        position: relative;
+        top: 12%;
+        color: white;
+        text-align: center;
+    }
+
     #content main{
         display: grid;
         padding: 10px;
