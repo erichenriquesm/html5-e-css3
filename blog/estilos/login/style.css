@@ -29,11 +29,14 @@ section div h1 span{
     color:rgb(50, 255, 50);
 }
 
+
+
 section div h3{
     text-align: center;
     font-size: 1.5em;
     margin: 10px auto;
 }
+
 a{
     text-decoration: none;
     color:white;
