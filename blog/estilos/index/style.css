@@ -33,7 +33,12 @@ header #bar{
 
 a{
     text-decoration: none;
-    color: black;
+    color: white;
+    transition: .3s;
+}
+
+a:hover{
+    color: #333333;
 }
 
 #bar button{

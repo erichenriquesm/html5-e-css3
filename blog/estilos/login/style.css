@@ -53,6 +53,7 @@ main h2{
 main form{
     max-width: 700px;
     margin: auto;
+    padding: 10px;
 }
 
 form label{
