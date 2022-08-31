@@ -4,24 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        @font-face {
-            font-family: 'hero';
-            src: url('Demo_Fonts/Fontspring-DEMO-herokid-bold.otf');
-        }
-
-        h1{
-            font-family: hero;
-            font-size: 3em;
-            background-image: linear-gradient(to right, blue, black, gray);
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-    </style>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media.css">
+    <title>Landing</title>
 </head>
 <body>
-    <h1>Teste de fonte</h1>
+    <main>
+        <section>
+            <h1>Vem se tornar um Outlier<span class="excla" span>!</span></h1>
+
+            <h2>E alcançar resultados com a minha ajuda<span class="excla">!</span></h2>
+
+            <form action="#" autocomplete="off">
+                <div><input type="text" name="nome" id="nome" placeholder="Nome..."></div>
+
+                <div>
+                    <input type="email" name="email" id="email" placeholder="Melhor e-mail">
+                </div>
+
+                <button id="sub">Garanta sua vaga<span class="excla">!</span></button>
+            </form>
+
+        </section>
+    </main>
 </body>
 </html>
