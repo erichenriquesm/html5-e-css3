@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../estilos/login/style.css">
     <link rel="stylesheet" href="../estilos/login/media.css">
+    <script src="../mascara.js"></script>
     <title>Login</title>
 </head>
 
@@ -34,12 +35,17 @@
         <form action="#" method="get">
             <label for="email">Email</label>
             <div>
-                <input type="email" name="email" id="email" placeholder="Digite seu email">
+                <input required type="email" name="email" id="email" placeholder="Digite seu email">
             </div>
 
             <label for="senha">Senha</label>
             <div>
-                <input type="password" name="senhas" id="senha" placeholder="Digite sua senha">
+                <input required type="password" name="senhas" id="senha" placeholder="Digite sua senha">
+            </div>
+
+            <label for="senha">Número de telefone (opcional) </label>
+            <div>
+                <input required type="tel" name="tel" id="tel" onkeydown="return mascaraTelefone(event)" minlength="15" maxlength="15">
             </div>
 
             <input id="sub" type="submit" value="Entrar">
