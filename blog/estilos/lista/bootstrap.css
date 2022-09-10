@@ -16,3 +16,9 @@ thead tr, td{
     justify-content: center;
     gap: 10px;
 }
+
+a{
+    color: white;
+    text-decoration: none;
+    transition: .3s;
+}
