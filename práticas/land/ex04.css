@@ -93,7 +93,7 @@ h1 {
 }
 @media (max-width: 450px) {
   * {
-    font-size: 1em;
+    font-size: 1.3em;
   }
 }
 @media (min-width: 600px) {
