@@ -22,6 +22,7 @@ body{
     background-color: lightgray;
     font-size: 2em;
     color: white;
+    padding: 10px;
 }
 
 .banner h3{
@@ -29,7 +30,6 @@ body{
     background-image: linear-gradient(to right,blue, purple, orange);
     background-size: 200%, 100%;
     animation: gradient 2s alternate ease-in-out infinite;
-    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -114,9 +114,31 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
     background-color: black;
     padding: 20px;
+}
+
+footer p{
+    display: flex;
+    align-items: center;
+}
+
+a i{
+    font-size: 22px;
+}
+
+footer a{
+    padding: 10px 0;
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    background-image: linear-gradient(to right,blue, purple, orange);
+    background-size: 200%, 10%;
+    animation: gradient 2s alternate;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
 }
 
 
