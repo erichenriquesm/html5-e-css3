@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: black;
+}
+
+.banner{
+    background: url('https://i.pinimg.com/originals/cd/76/d7/cd76d793c30eb1d8afdb9193ce0b8984.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 350px;
+    display: grid;
+    place-items: center;
+    background-color: lightgray;
+    font-size: 2em;
+    color: white;
+}
+
+.banner h3{
+    padding-right: 15px;
+    background-image: linear-gradient(to right,blue, purple, orange);
+    background-size: 200%, 100%;
+    animation: gradient 2s alternate ease-in-out infinite;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+section{
+    padding-top: 10%;
+    padding-bottom: 10%;
+    height: 300px;
+    margin-bottom: 30px;
+}
+
+.white{
+    background-color: white;
+    background: linear-gradient(-45deg, black, white);
+    background-size: 500% 100%;
+    animation: gradient 4s alternate infinite;
+}
+
+@keyframes gradient{
+    from{
+        background-position-x: 0%;
+    }
+    to{
+        background-position-x: 100%;
+    }
+}
+
+.black{
+    background-color: black;
+    color: white;
+}
+
+p{
+    padding: 20px 10px;
+    text-align: justify;
+}
+
+section article{
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 20px;
+    display: grid;
+    align-items: center;
+    grid-template-columns:0.8fr 1fr;
+}
+
+#fim{
+    margin-bottom: 3%;
+}
+
+.bloco{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    margin-bottom: 15px;
+}
+
+img{
+    width: 100%;
+}
+
+[data-animation]{
+    transition: 1s;
+    opacity: 0;
+}
+
+[data-animation="left"]{
+    transform: translate3d(-50px, 0, 0);
+}
+
+[data-animation="right"]{
+    transform: translate3d(50px, 0, 0);
+}
+
+[data-animation].mostrar{
+    opacity: 1;
+    transform: translate3d(0,0,0);
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: black;
+    padding: 20px;
+}
+
+
+
+
+@media (max-width:500px){
+
+    .banner h3{
+        font-size: 1em;
+    }
+
+    [data-animation].mostrar{
+        opacity: 1;
+        transform: translate3d(0,-60px,0);
+    }
+
+    [data-animation="left"]{
+        transform: translate3d(0, 0, 0);
+    }
+
+    [data-animation="right"]{
+        transform: translate3d(0, 0, 0);
+    }
+
+    .bloco{
+        display: block;
+        width: 100%;
+        height: 200px;
+    }
+    section{
+        padding-top: 0%;
+        padding-bottom: 0%;
+        height: 500px;
+        margin-bottom: 100px;
+    }
+
+
+    section article{
+        grid-template-columns: 1fr;
+    }
+    
+}
