@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .container{
+            background-image: linear-gradient(-50deg,purple, rgb(255, 0, 76), blue);
+            background-size: 500%, 100%;
+            height: 100vh;
+            width: 100vw;
+            display: grid;
+            place-items: center;
+            animation: gradient 10s alternate infinite;
+        }
+
+
+        @keyframes gradient{
+            from{
+                background-position-x: 0%;
+            }
+
+            to{
+                background-position-x: 100%;
+            }
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Gradient</h1>
+    </div>
+</body>
+</html>
