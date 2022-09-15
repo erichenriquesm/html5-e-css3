@@ -4,12 +4,14 @@
     font-family: 'Lato', sans-serif;
 }
 
+
+
 .bg-primary-color{
     background-color: white;
 }
 
 .secondary-color{
-    color: #ece8ea;
+    color: #7a7a7a;
 }
 
 .bg-dark-color{
@@ -174,6 +176,70 @@ img,h3,p{
     margin-bottom: 2.5em;
 }
 
+/* FOOTER TOP */
+
+#footer{
+    padding: 3em 2em;
+}
+
+#footer-top{
+    margin-bottom: 2em;
+}
+
+#footer-top,
+#footer-top i{
+    color: white;
+}
+
+#social-icons{
+    text-align: right;
+}
+
+#social-icons i{
+    margin-right: 1em;
+    font-size: 1.5em;
+}
+
+#social-icons i:hover{
+    color: #7a7a7a;
+}
+
+
+/* FOOTER DETAILS */
+#footer-details{
+    margin-bottom: 3em;
+}
+
+#news-container,
+#contact-container,
+#links-container{
+    padding: 0;
+    border: 0;
+    margin-bottom: 2em;
+}
+
+#footer-details h4{
+    color: white;
+    margin-bottom: 1.5em;
+}
+
+#news-container input{
+    border-radius: 0;
+    border-bottom: none;
+}
+
+#links-container li{
+    margin-bottom: 0.5em;
+}
+
+#links-container a{
+    text-decoration: none;
+}
+
+#links-container a:hover{
+    color: white;
+}
+
 @media (max-width: 438px){
     .carousel-caption{
         top: 1rem;
@@ -204,6 +270,8 @@ img,h3,p{
     }
 
 }
+
+
 
 
 @media (max-width:1000px){
