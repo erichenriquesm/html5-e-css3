@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>legenda em uma imagem</title>
+    <style>
+        .container{
+            width: 100%;
+            height: 500px;
+            position: relative;
+        }
+
+        img{
+            width: 100%;
+        }
+
+        .legenda{
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            opacity: 0.6;
+            width: 100%;
+            height: 100%;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://github.com/matheusbattisti/curso_bootstrap_5/raw/main/13_imovi/img/banner-1.jpg" alt="">
+        <div class="legenda">
+            Teste
+        </div>
+    </div>
+</body>
+</html>

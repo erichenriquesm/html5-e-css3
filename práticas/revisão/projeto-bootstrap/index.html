@@ -1,12 +1,277 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BootStrap</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iMovi</title>
+  <link rel="shortcut icon" href="https://raw.githubusercontent.com/matheusbattisti/curso_bootst
+    rap_5/main/13_imovi/img/favicon.ico" type="image/x-icon">
+  <!-- CSS puro -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- BootStrap -->
+  <!-- CSS bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <!-- JS BootStrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+  <!-- BootSatrap icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 </head>
+
 <body>
-    
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg bg-p" id="navbar">
+    <div class="container py-3">
+      <a href="#" class="navbar-brand primary-color">
+        <img style="width: 120px; height:120px;" src="https://raw.githubusercontent.com/matheusbattisti/curso_bootstrap_5/main/13_imovi/img/imovi-icon.png"
+          alt="iMovi">
+        <span>iMovi</span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-items"
+        aria-controls="nav-bar-items" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bi bi-list"></i>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="navbar-items">
+      <ul class="navbar-nav me-auto mb-2 lg-0">
+        <li class="nav-item">
+          <a href="#" class="nav-link primary-color" aria-current="page">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="#" class="nav-link primary-color">Projetos</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="#" class="nav-link primary-color">Imóveis</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="#" class="nav-link primary-color">Contatos</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- SLIDER -->
+  <div class="container">
+    <div id="carouselExampleCaptions" class="carousel carousel-dark slide" data-bs-ride="false">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://github.com/matheusbattisti/curso_bootstrap_5/raw/main/13_imovi/img/banner-1.jpg"
+            class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>
+              Casas planejadas
+            </h5>
+
+            <a href="#" class="btn btn-dark">Ver projetos</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://github.com/matheusbattisti/curso_bootstrap_5/raw/main/13_imovi/img/banner-2.jpg"
+            class="d-block w-100 active" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>
+              Projetos completos
+            </h5>
+
+            <a href="#" class="btn btn-dark">Ver projetos</a>
+          </div>
+
+        </div>
+        <div class="carousel-item">
+          <img src="https://github.com/matheusbattisti/curso_bootstrap_5/raw/main/13_imovi/img/banner-3.jpg"
+            class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>
+              Projetos inovadores
+            </h5>
+
+            <a href="#" class="btn btn-dark">Ver projetos</a>
+          </div>
+        </div>
+
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  </div>
+  <!-- MINI BANNERS -->
+  <div class="col-10 md-9 offset-md-1" id="mini-bunners">
+    <div class="row">
+      <div class="col-12 col-md-4">
+        <div class="card text-center">
+          <i class="bi bi-box primary-color"></i>
+          <div class="card-body">
+            <h5 class="card-title primary-color">Projetos completos</h5>
+            <p class="card-text secundary-color">
+              Lt consias dolequuntur haru.
+            </p>
+
+            <a href="#" class="btn btn-dark">Saber mais</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4">
+        <div class="card text-center">
+          <i class="bi bi-layers primary-color"></i>
+          <div class="card-body">
+            <h5 class="card-title primary-color">Você participa também</h5>
+            <p class="card-text secundary-color">
+              Lorem i harum nemo.
+            </p>
+
+            <a href="#" class="btn btn-dark">Saber mais</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4">
+        <div class="card text-center">
+          <i class="bi bi-lightning-charge primary-color"></i>
+          <div class="card-body">
+            <h5 class="card-title primary-color">Adiantamento de entregas</h5>
+            <p class="card-text secundary-color">
+              Lore fugit consntur harum nemo.
+            </p>
+
+            <a href="#" class="btn btn-dark">Saber mais</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- DESTAQUES -->
+  <div class="container" id="featured-container">
+    <div class="col12">
+      <h2 class="title primary-color">
+        Trabalhos em Destaque
+      </h2>
+
+      <p class="subtitle">Conheça nossos projetos mais desafiadores</p>
+    </div>
+    <div id="featured-images">
+        <div class="area">
+          <img src="https://github.com/matheusbattisti/curso_bootstrap_5/raw/main/13_imovi/img/project-1.jpg" alt="." class="img">
+            <div class="legenda">
+              <p class="secondary-color">
+                Categoria
+              </p>
+              <h3>Nome do projeto</h3>
+            </div>
+        </div>
+
+        <div class="area">
+          <img src="https://github.com/matheusbattisti/curso_bootstrap_5/raw/main/13_imovi/img/project-2.jpg" class="img">
+          <div class="legenda">
+            <p>Categoria</p>
+            <h3>Nome do projeto</h3>
+          </div>
+        </div>
+
+        <div class="area">
+          <img src="https://github.com/matheusbattisti/curso_bootstrap_5/raw/main/13_imovi/img/project-3.jpg" alt="." class="img">
+          <div class="legenda">
+            <p>Categoria</p>
+            <h3>Nome do projeto</h3>
+          </div>
+        </div>
+
+        <div class="area">
+          <img src="https://github.com/matheusbattisti/curso_bootstrap_5/raw/main/13_imovi/img/project-4.jpg" alt="." class="img">
+          <div class="legenda">
+            <p>Categoria</p>
+            <h3>Nome do projeto</h3>
+          </div>
+        </div>
+
+        <div class="area">
+          <img src="https://github.com/matheusbattisti/curso_bootstrap_5/raw/main/13_imovi/img/project-5.jpg" alt="." class="img">
+          <div class="legenda">
+            <p>Categoria</p>
+            <h3>Nome do projeto</h3>
+          </div>
+        </div>
+
+        <div class="area">
+          <img src="https://github.com/matheusbattisti/curso_bootstrap_5/raw/main/13_imovi/img/project-6.jpg" alt="." class="img">
+          <div class="legenda">
+            <p>Categoria</p>
+            <h3>Nome do projeto</h3>
+          </div>
+        </div>
+      </div>
+  </div>
+  </div>
+  <div class="container">
+    <div class="col-12">
+      <h2 class="title primary-color">
+        Detalhes importantes
+      </h2>
+
+      <p class="subtitle">Saiba mais sobre a experiência da nossa incrível equipe</p>
+    </div>
+    <div class="row" id="info-banner">
+      <div class="col-12 col-md-5">
+        <img width="100%" src="https://github.com/matheusbattisti/curso_bootstrap_5/raw/main/13_imovi/img/infobanner.jpg" alt="..." class="img-fliud">
+      </div>
+      <div class="col-12 col-md-7 bg-secondary-color" id="info-content">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="title primary-color">
+              Estes dados fazem diferença
+            </h2>
+      
+            <p class="subtitle">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda, dolores quae, voluptatibus sit laborum placeat vero veniam sed, voluptatem adipisci minima illo. Odit blanditiis deserunt nihil quam fuga dolor tempore?</p>
+          </div>
+          <div class="col-12" id="info-numbers">
+            <div class="row">
+              <div class="col-4">
+                <h3 class="primary-color">18</h3>
+                <p class="secondary-collor">Anos na contrução civil</p>
+              </div>
+
+              <div class="col-4">
+                <h3 class="primary-color">95</h3>
+                <p class="secondary-collor">Projetos Executados</p>
+              </div>
+
+              <div class="col-4">
+                <h3 class="primary-color">639</h3>
+                <p class="secondary-collor">Clientes</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <a href="#" class="btn btn-dark">Saber mais</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
