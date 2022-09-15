@@ -87,16 +87,17 @@ a{
 }
 
 #mini-bunners .card{
-    padding: 20px 10px;
+    padding: 10px 10px;
     border-radius: 0px;
 }
 
+
 #mini-bunners i{
-    font-size:2em;
+    font-size:1.5em;
 }
 
 #mini-bunners .card-title{
-    margin-bottom: 1em;
+    margin-bottom:1em;
 }
 
 #featured-images{
@@ -172,7 +173,25 @@ img,h3,p{
     margin-bottom: 2.5em;
 }
 
+@media (max-width: 438px){
+    .carousel-caption{
+        top: 1rem;
+}
+}
 @media(max-width:768px){
+    #navbar{
+        height: 150px;
+    }
+    
+    .carousel-caption{
+        bottom: -5rem !important;
+    }
+
+    .carousel-indicators{
+        margin-bottom: .5em !important;
+    
+    }
+
     #featured-images{
         display: grid;
         grid-template-columns: repeat(1, 1fr) !important;
@@ -182,7 +201,12 @@ img,h3,p{
     .title::before{
         display: none;
     }
+
 }
+
+    
+    
+
 
 @media (max-width:1000px){
     #navbar-items{
@@ -208,10 +232,37 @@ img,h3,p{
     }
 }
 
-@media(max-width:1200px){
-    .carousel-caption{
-        margin-bottom: 12em;
+@media(max-width:1085px){
+    #mini-bunners .card{
+         height: 100%;
     }
+
+    .card-text{
+        font-size: 1em;
+    }
+
+    .card-btn{
+        margin-top: 0;
+    }
+
+    #mini-bunners .card-title{
+        font-size: 1em;
+    }
+}
+
+@media(min-width:1001px){
+    .carousel-caption{
+        margin-bottom: 12em !important;
+    }
+
+}
+
+
+@media(min-width:1200px){
+    .carousel-caption{
+        margin-bottom: 15em !important;
+    }
+
 }
 
 @media (min-width:768px){
@@ -233,5 +284,4 @@ img,h3,p{
         padding: 3em;
     }
 }
-
 
