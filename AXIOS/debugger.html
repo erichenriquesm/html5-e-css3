@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            border: 1px solid rgba(0, 0, 0, 0.233);
+            width: 500px;
+            height: 500px; 
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);   
+        }
+
+        #thumb{
+            text-align: center;
+            height: 80px;
+        }
+
+        h1{
+            padding: 10px;
+        }
+
+        #content{
+            padding: 20px;
+        }
+        label{
+            font-size: 2em;
+            margin-left: 20px;
+        }
+
+        input{
+            display: block;
+            width: 90%;
+            margin: 20px auto;
+            height: 30px;
+            border-top: 0px;
+            border-right: 0px;
+            border-bottom: 1px solid black;
+            border-left: 0px;
+            outline: none;
+        }
+
+        button{
+            background-color: white;
+            cursor: pointer;
+            display: block;
+            margin: 5px auto;
+            width: 100px;
+            height: 40px;
+            border: 1px solid rgba(0, 0, 0, 0.205);
+            font-size: 1.3em;
+        }
+
+        @media (max-width: 550px){
+            #container{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div id="container">
+        <div id="thumb">
+            <h1>AXIOS API</h1>
+        </div>
+
+        <div id="content">
+            <label for="nome">Nome</label>
+            <div><input type="text" name="nome" id="nome"></div>
+
+            <label for="email">Email</label>
+
+            <div><input type="email" name="email" id="email"></div>
+
+            <label for="senha">Senha</label>
+            <div><input type="password" name="senha" id="senha"></div>
+
+            <button onclick="promise()">Enviar</button>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="primeiro_request.js"></script>
+</body>
+</html>
