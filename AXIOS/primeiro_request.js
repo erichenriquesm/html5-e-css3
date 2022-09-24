@@ -18,6 +18,8 @@ function promise() {
                 console.log('erro')
             })
         ;
+
+        alert('ENVIADO :)')
     }else{
         alert('Preencha todos os dados')
     }
