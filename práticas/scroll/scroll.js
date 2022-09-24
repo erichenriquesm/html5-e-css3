@@ -1,18 +1,21 @@
-const blocos = document.querySelectorAll('[data-animation]');
-const classe = 'mostrar';
+let blocos = document.querySelectorAll('[data-animation]');
+let mostrar = 'mostrar';
 
 function exibir(){
-    const topo = window.pageYOffset;
-    blocos.forEach(function(bloco){
-        if(topo > bloco.offsetTop -300){
-            bloco.classList.add(classe);
+    blocos.forEach(bloco =>{
+        let siteTop = window.pageYOffset;
+        if(siteTop > bloco.offsetTop - 300){
+            bloco.classList.add(mostrar);
         }else{
-            bloco.classList.remove(classe);
+            bloco.classList.remove(mostrar);
         }
-    });
+    })
+}   
+
+exibir();
+
+if(blocos.length > 0){
+    window.addEventListener('scroll', function(){
+        exibir();
+    })
 }
-
-
- window.addEventListener("scroll", function(){
-    exibir();
-})
