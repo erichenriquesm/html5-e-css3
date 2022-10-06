@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,200&display=swap');
+
+
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+thead tr, td{
+    text-align: center;
+}
+
+.crud{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    transition: .3s;
+}
